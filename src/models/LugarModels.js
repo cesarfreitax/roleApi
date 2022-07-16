@@ -1,10 +1,10 @@
 class LugarModels {
-    constructor(id_lugar, nomeDoLugar, bairro, descricao, horarioDeFuncionamento){
+    constructor(id_lugar, nome_do_lugar, bairro, descricao, link){
         this.id_lugar = id_lugar
-        this.nomeDoLugar = nomeDoLugar
+        this.nome_do_lugar = nome_do_lugar
         this.bairro = bairro
         this.descricao = descricao
-        this.horarioDeFuncionamento = horarioDeFuncionamento
+        this.link = link
     }
 };
 
