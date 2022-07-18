@@ -26,9 +26,9 @@ ____
 ```js
 "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "path": "^0.12.7",
-    "sqlite3": "^5.0.6"
+    "sqlite3": "^5.0.9"
   }
 ```
 #### 🦶Para iniciar esse projeto siga os passos:
@@ -60,59 +60,61 @@ ____
 
 Nossa API por enquanto conta com apenas uma entidade e suas próprias rotas:
 
-## 🗒️Lugares:
+## 📍Lugares:
 
-### 👀Ver todo os lugares pra dar um rolé no banco de dados:
+### 👀Ver todo os lugares, pra dar um rolé, no banco de dados:
 - Método GET 
 - No caminho "url da API" + /lugares
+#### URL
+```
+http://localhost:3000/lugares
+```
 
 
-### 🔎Buscar apenas um lugar pra dar um rolé do banco por id:
+### 🔎Buscar apenas um lugar, pra dar um rolé, no banco de dados por id:
 - Método GET 
 - No caminho "url da API" + /lugares/:id
+#### URL
+```
+http://localhost:3000/lugar/1
+```
 
 
-### ➕Adicionar novo lugar pra dar um rolé no no banco de dados:
+### ➕Adicionar novo lugar, pra dar um rolé, no banco de dados:
 - Método POST 
-- No caminho "url da API" + /cardapio 
-- Colocar no corpo da requisicao os dados necessários para adicionar um lugar, segue abaixo o modelo de como deve ser feito
-
+- No caminho "url da API" + /lugar
+- Colocar no corpo da requisicao os dados necessários para adicionar um lugar
+#### URL:
+```
+http://localhost:3000/lugar
+```
+#### Corpo da requisição:
 ``` js:
 {
-	"nome_do_lugar": "Espaco Hall",
+	"nome_do_lugar": "Sushi da Praca",
 	"bairro": "Barra da Tijuca",
-	"descricao": "Casa de festas bem badalada na noite carioca. O local costuma ter shows com cantores famosos nas sextas e aos sábados rola dj",
-	"link": "https://espacohall.com.br/"
+	"descricao": "Restaurante especializado em comida japonesa.",
+	"link": "http://www.sushidapraca.com.br/"
 }
 ```
 
-com os dados necessários para o seu banco de dados. Os campos para adicionar um novo item são: id_produto, produto e preco (O Produto deve conter mais de 5 letras e o preco deve
-conter apenas numéros)
-
-``` js:
-Sucesso:
-{
-	"message": "Novo produto cadastrado"
-}
-
-Erro:
-{
-	"erro": "Requisição está fora dos padrões"
-}
 ```
 ### ↩️Alterar cardápio:
+- Método PUT
+- No caminho "url da API" + /lugar/:id
+- Colocar no corpo da requisicao os dados necessários para alterar um lugar
+#### URL
+```
+http://localhost:3000/lugar/1
+```
 
-Método HTTP Put no caminho "url da api" + /cardapio/:id passando os valores que deseja alterar especificando seus devidos campos. O preco deve conter apenas números e o pedido deve conter mais de 5 letras.
-
-
+#### Corpo da requisição:
 ``` js:
-Sucesso: 
 {
-	"message": "Cardapio alterado com sucesso!"
-}
-Erro: 
-{
-	"erro": "Requisição está fora dos padrões"
+	"nome_do_lugar": "Sushi da Praia",
+	"bairro": "Leblon",
+	"descricao": "Restaurante especializado em comida japonesa diretamente da praia.",
+	"link": "http://www.sushidapraia.com.br/"
 }
 
 ```
