@@ -8,7 +8,7 @@ ____
 
 #### SUA API PERFEITA PARA DAR AQUELE ROLÉ! =)
 ___
-#### 🗒️Descrição:
+#### 💜Descrição:
 *Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes, ou seja, o CRUD completo!
 ____
 #### 🪛Ferramentas utilizadas:
@@ -28,21 +28,23 @@ ____
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "path": "^0.12.7",
-    "sqlite": "^4.1.1",
     "sqlite3": "^5.0.6"
   }
 ```
-Para iniciar este projeto você pode copiar o código abaixo e colar no terminal (Crtl + shift + v), para fazer o clone deste repositório e instalar as dependencias.
+#### 🦶Para iniciar esse projeto siga os passos:
+- Crie uma pasta no seu computador para armazenar o projeto e entre nela
+- Dentro da pasta, clique com o direito do mouse e selecione "Git Bash Here"
+- Com o terminal aberto, digite no terminal "git init"
+- Depois é só copiar o código abaixo e colar no terminal para fazer o clone desse repositório e instalar as dependências
 
 ```
-git clone https://github.com/raphhaelm/ProjetoFinalModulo4.git && cd ProjetoFinalModulo4 && npm install consign && npm install express && npm install all moment && npm install sqlite3 && npm install cors  && npm install path && npm install sqlite
+git clone https://github.com/cesarfreitax/roleApi.git && cd ProjetoFinalModulo4 && npm install
 ```
 ____
 ### ⚙️Depêndecias de desenvolvimento:
 ```js 
 "devDependencies": {
     "dotenv": "^16.0.0",
-    "nodemon": "^2.0.16",
     "jest": "^28.0.3"
   }
   ```
@@ -56,31 +58,35 @@ npm start
 ____
 # ➡️Rotas:
 
-Nossa API conta com 4 Entidades e cada uma tem sua rota:
-- Cardapio
-- Clientes 
-- Fornecedores
-- Pedidos
+Nossa API por enquanto conta com apenas uma entidade e suas próprias rotas:
 
-## 🗒️Cardapio:
-Ver todo os itens do cardapio do banco de dados:
-Método HTTP Get no caminho "url da api" + /cardapio
+## 🗒️Lugares:
+
+### 👀Ver todo os lugares pra dar um rolé no banco de dados:
+- Método GET 
+- No caminho "url da API" + /lugares
 
 
-### 🔎Buscar produto do cardápio por id:
-Método HTTP Get no caminho "url da api" + /cardapio/:id
+### 🔎Buscar apenas um lugar pra dar um rolé do banco por id:
+- Método GET 
+- No caminho "url da API" + /lugares/:id
+
+
+### ➕Adicionar novo lugar pra dar um rolé no no banco de dados:
+- Método POST 
+- No caminho "url da API" + /cardapio 
+- Colocar no corpo da requisicao os dados necessários para adicionar um lugar, segue abaixo o modelo de como deve ser feito
 
 ``` js:
 {
-	"id_produto": 1,
-	"produto": "X-Bacon",
-	"preco": 16
+	nome_do_lugar: "Espaco Hall",
+	bairro: "Barra da Tijuca",
+	descricao: "Casa de festas bem badalada na noite carioca. O local costuma ter shows com cantores famosos nas sextas e aos sábados rola dj"
+	link: "https://espacohall.com.br/"
 }
-
 ```
 
-### ➕Adicionar novo produto no cardápio:
-Método HTTP Post no caminho "url da api" + /cardapio com os dados necessários para o seu banco de dados. Os campos para adicionar um novo item são: id_produto, produto e preco (O Produto deve conter mais de 5 letras e o preco deve
+com os dados necessários para o seu banco de dados. Os campos para adicionar um novo item são: id_produto, produto e preco (O Produto deve conter mais de 5 letras e o preco deve
 conter apenas numéros)
 
 ``` js:
@@ -120,79 +126,6 @@ Resposta:
 	"message": "Produto deletado com sucesso"
 }
 ```
-___
-## 🚹Clientes:
-Ver todos os clientes do banco de dados:
-Método HTTP Get no caminho "url da api" + /clientes
-
-
-### 🔎Buscar cliente por id: ###
-Método HTTP Get no caminho "url da api" + /clientes/:id
-
-
-
-### ➕Adicionar novo cliente: 
-Método HTTP Post no caminho "url da api" + /cliente com os dados necessários para o seu banco de dados. Os campos para adicionar um novo cliente são: nome, telefone e email.
-
-
-### 📝Alterar o cadastro de um cliente: 
-Método HTTP Put no caminho "url da api" + /cliente/:id passando os valores que deseja alterar especificando seus devidos campos.
-
-
-### ❌Deletar um cliente: 
-Método HTTP Delete no caminho "url da api" + /cliente/:id.
-
-___
-## 🚛Fornecedores
-
-Ver todos os fornecedores do banco de dados:
-Método HTTP Get no caminho "url da api" + /fornecedores
-
-### 🔎Buscar fornecedor por id:
-Método HTTP Get no caminho "url da api" + /fornecedores/:id
-
-
-### ➕Adicionar novo fornecedor:
-Método HTTP Post no caminho "url da api" + /pedido com os dados necessários para o seu banco de dados. Os campos para adicionar um novo pedido são: id, nome, ramo, cnpj. 
-
-
-### ❌Deletar um fornecedor:
-Método HTTP Delete no caminho "url da api" + /fornecedor/:id.
-___
-## 📝Pedidos: 
-Ver todos os pedidos do banco de dados:
-Método HTTP Get no caminho "url da api" + /pedidos
-
-
-### 🔎Buscar pedido por id: 
-Método HTTP Get no caminho "url da api" + /pedido/:id
-
-
-
-### ➕Adicionar novo pedido: 
-Método HTTP Post no caminho "url da api" + /pedido com os dados necessários para o seu banco de dados. Os campos para adicionar um novo pedido são: nome, produto e preco. O preco deve conter apenas números.
-```js 
-{
-  "nome": "Sr Burgão",
-  "produto": "X-Monster",
-  "preco": 10
-}
-```
-
-
-### ↩️Alterar um pedido no banco de dados: 
-Método HTTP Put no caminho "url da api" + /pedido/:id passando os valores que deseja alterar especificando seus devidos campos.
-```js 
-{
-  "nome": "Sr Burgão",
-  "produto":"X-Dieta",
-  "preco": 10
-}
-```
-
-### ❌Deletar um pedido: 
-Método HTTP Delete no caminho "url da api" + /pedido/:id.
-
 ____
 #### 🌐Heroku:
 Para acessar a aplicação online click aqui: 
