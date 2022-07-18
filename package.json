@@ -8,5 +8,8 @@
   "type": "module",
   "scripts": {
     "start": ""
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
