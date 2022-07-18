@@ -4,7 +4,7 @@ class DatabaseMetodosLugar {
 
     static createTableLugar() {
         const lugar = `CREATE TABLE IF NOT EXISTS lugar (
-            id_lugar INTEGER PRIMARY KEY AUTOINCREMENT,
+            id_lugar INTEGER PRIMARY KEY,
             nome_do_lugar VARCHAR,
             bairro VARCHAR,
             descricao VARCHAR,
@@ -23,11 +23,11 @@ class DatabaseMetodosLugar {
     }
 
     static postLugar(lugar) {
-        const query = `INSERT INTO lugar VALUES (?, ?, ?, ?, ?)`;
+        const query = `INSERT INTO lugar (nome_do_lugar, bairro, descricao, link) VALUES (?, ?, ?, ?)`;
 
         const body = Object.values(lugar);
 
-        return new Promise( (resolve, reject) => {
+        return new Promise((resolve, reject) => {
             Database.run(query, [...body], (e) => {
                 if(e){
                     reject(e.message);
@@ -39,7 +39,7 @@ class DatabaseMetodosLugar {
     };
 
     static updateLugarById(lugar, id) {
-        const query = `UPDATE lugar SET (nome_do_lugar, bairro, descricao, link) = (?, ?, ?, ?) WHERE id = ?`;
+        const query = `UPDATE lugar SET (nome_do_lugar, bairro, descricao, link) = (?, ?, ?, ?) WHERE id_lugar = ?`;
 
         const body = Object.values(lugar);
 
@@ -55,7 +55,7 @@ class DatabaseMetodosLugar {
     };
 
     static getLugarById(id) {
-        const query = `SELECT * FROM lugar WHERE id = ?`;
+        const query = `SELECT * FROM lugar WHERE id_lugar = ?`;
 
         return new Promise( (resolve, reject) => {
             Database.get(query, id, (e, result) => {
@@ -72,7 +72,7 @@ class DatabaseMetodosLugar {
         const query = `SELECT * FROM lugar`;
 
         return new Promise ( (resolve, reject) => {
-            Database.get(query, (e, result) => {
+            Database.all(query, (e, result) => {
                 if (e){
                     reject(e.message);
                 } else {
@@ -83,7 +83,7 @@ class DatabaseMetodosLugar {
     };
 
     static deleteLugarById(id) {
-        const query = `DELETE FROM lugar WHERE id = ?`;
+        const query = `DELETE FROM lugar WHERE id_lugar = ?`;
 
         return new Promise ( (resolve, reject) => {
             Database.run(query, id, (e) => {
