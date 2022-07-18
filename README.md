@@ -65,7 +65,7 @@ Nossa API por enquanto conta com apenas uma entidade e suas próprias rotas:
 ### 👀Ver todo os lugares, pra dar um rolé, no banco de dados:
 - Método GET 
 - No caminho "url da API" + /lugares
-#### URL
+#### URL:
 ```
 http://localhost:3000/lugares
 ```
@@ -74,7 +74,7 @@ http://localhost:3000/lugares
 ### 🔎Buscar apenas um lugar, pra dar um rolé, no banco de dados por id:
 - Método GET 
 - No caminho "url da API" + /lugares/:id
-#### URL
+#### URL:
 ```
 http://localhost:3000/lugar/1
 ```
@@ -98,16 +98,14 @@ http://localhost:3000/lugar
 }
 ```
 
-```
 ### ↩️Alterar cardápio:
 - Método PUT
 - No caminho "url da API" + /lugar/:id
 - Colocar no corpo da requisicao os dados necessários para alterar um lugar
-#### URL
+#### URL:
 ```
 http://localhost:3000/lugar/1
 ```
-
 #### Corpo da requisição:
 ``` js:
 {
@@ -120,13 +118,11 @@ http://localhost:3000/lugar/1
 ```
 
 ### ❌Deletar item no cardápio:
-Método HTTP Delete no caminho "url da api" + /cardapio/:id.
-
-Resposta: 
-``` js:
-{
-	"message": "Produto deletado com sucesso"
-}
+- Método DELETE
+- No caminho "url da API" + /lugar/id
+#### URL:
+```
+http://localhost:3000/lugar/1
 ```
 ____
 #### 🌐Heroku:
