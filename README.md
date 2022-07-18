@@ -1,30 +1,22 @@
-# Rolé API # 🍸🍽
+# Rolé API # 🚀💜✨
 ____
 #### 📝Proposta:
  *Estou trabalhando no desenvolvimento de uma API REST em Node.Js. Escolhi o tema "Rolé", pois é um termo que usamos aqui na cidade do Rio de Janeiro pra se referir a sair pra algum lugar.*
-
-____
-##### Tema: 🍔 *Hamburgueria*.
-
-
-
 ____
 
-<img align="center" src="https://user-images.githubusercontent.com/96268732/179521148-5861c8aa-05c8-43cb-88ed-1aaa8b1e79a4.png">
+<img width="300" src="https://user-images.githubusercontent.com/96268732/179521148-5861c8aa-05c8-43cb-88ed-1aaa8b1e79a4.png">
 
-#### A sua fome é o nosso bug e o nosso foco é desenvolver o seu burger
+#### SUA API PERFEITA PARA DAR AQUELE ROLÉ! =)
 ___
 #### 🗒️Descrição:
-*Desenvolvemos a aplicação que simula uma hamburgueria, utilizando esta aplicação é possivel, organizar sua lista de clientes, criar um cardapio, cadastrar fornecedores e anotar pedidos.
-A aplicação utiliza o banco de dados Sqlite e os métodos HTTP (CRUD) foram testados utilizando a ferramenta Insomnia.
-Escolhemos a arquitetura MVC para estruturar nosso código.*
+*Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes, ou seja, o CRUD completo!
 ____
 #### 🪛Ferramentas utilizadas:
 • [Express](https://www.npmjs.com/package/express)
 
 • [Sqlite](https://www.sqlite.org/docs.html )
 
-• [JavaScript_NodeJS](https://nodejs.org/en/docs/guides/)
+• [Nodejs](https://nodejs.org/en/docs/guides/)
 
 • [Insomnia](https://docs.insomnia.rest/insomnia/send-your-first-request)
 
