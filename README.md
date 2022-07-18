@@ -50,7 +50,7 @@ ____
   ```
 ____
 ## Para utilizar a aplicação 
-Inicie o terminal e rode com: 
+🚀 Inicie o terminal e rode com: 
 ```js
 npm start
 ```
@@ -109,12 +109,11 @@ http://localhost:3000/lugar/1
 #### Corpo da requisição:
 ``` js:
 {
-	"nome_do_lugar": "Sushi da Praia",
-	"bairro": "Leblon",
-	"descricao": "Restaurante especializado em comida japonesa diretamente da praia.",
-	"link": "http://www.sushidapraia.com.br/"
+	"nome_do_lugar": "Algum nome",
+	"bairro": "Algum bairro",
+	"descricao": "Alguma descricao.",
+	"link": "http://www.algumlink.com.br/"
 }
-
 ```
 
 ### ❌Deletar item no cardápio:
