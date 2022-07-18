@@ -1,6 +1,6 @@
 # Rolé API # 🚀💜✨
 ____
-#### 💜Proposta:
+#### 💜 Proposta:
  *Estou trabalhando no desenvolvimento de uma API REST em Node.Js. Escolhi o tema "Rolé", pois é um termo que usamos aqui na cidade do Rio de Janeiro pra se referir a sair pra algum lugar.*
 ____
 
@@ -8,10 +8,10 @@ ____
 
 #### SUA API PERFEITA PRA DAR AQUELE ROLÉ!
 ___
-#### 📝Descrição:
+#### 📝 Descrição:
 *Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes com o CRUD completo!*
 ____
-#### 🪛Ferramentas utilizadas:
+#### 🪛 Ferramentas utilizadas:
 • [Express](https://www.npmjs.com/package/express)
 
 • [Sqlite](https://www.sqlite.org/docs.html )
@@ -22,7 +22,7 @@ ____
 
 
 ____
-#### ⚙️Dependências:
+#### ⚙️ Dependências:
 ```js
 "dependencies": {
     "cors": "^2.8.5",
@@ -31,7 +31,7 @@ ____
     "sqlite3": "^5.0.9"
   }
 ```
-#### 🦶Para iniciar esse projeto siga os passos:
+#### 🦶 Para iniciar esse projeto siga os passos:
 - Crie uma pasta no seu computador para armazenar o projeto e entre nela
 - Dentro da pasta, clique com o direito do mouse e selecione "Git Bash Here"
 - Com o terminal aberto, digite no terminal "git init"
@@ -41,7 +41,7 @@ ____
 git clone https://github.com/cesarfreitax/roleApi.git && cd ProjetoFinalModulo4 && npm install
 ```
 ____
-### ⚙️Depêndecias de desenvolvimento:
+### ⚙️ Depêndecias de desenvolvimento:
 ```js 
 "devDependencies": {
     "dotenv": "^16.0.0",
@@ -49,20 +49,20 @@ ____
   }
   ```
 ____
-## Para utilizar a aplicação 
-🚀 Inicie o terminal e rode com: 
+## 🚀 Para utilizar a aplicação 
+Inicie o terminal e rode com: 
 ```js
 npm start
 ```
 
 ____
-# ➡️Rotas:
+# ➡️ Rotas:
 
 Nossa API por enquanto conta com apenas uma entidade e suas próprias rotas:
 
-## 📍Lugares:
+## 📍 Lugares:
 
-### 👀Ver todo os lugares, pra dar um rolé, no banco de dados:
+### 👀 Ver todo os lugares, pra dar um rolé, no banco de dados:
 - Método GET 
 - No caminho "url da API" + /lugares
 #### URL:
@@ -71,7 +71,7 @@ http://localhost:3000/lugares
 ```
 
 
-### 🔎Buscar apenas um lugar, pra dar um rolé, no banco de dados por id:
+### 🔎 Buscar apenas um lugar, pra dar um rolé, no banco de dados por id:
 - Método GET 
 - No caminho "url da API" + /lugares/:id
 #### URL:
@@ -80,7 +80,7 @@ http://localhost:3000/lugar/1
 ```
 
 
-### ➕Adicionar novo lugar, pra dar um rolé, no banco de dados:
+### ➕ Adicionar novo lugar, pra dar um rolé, no banco de dados:
 - Método POST 
 - No caminho "url da API" + /lugar
 - Colocar no corpo da requisicao os dados necessários para adicionar um lugar
@@ -98,7 +98,7 @@ http://localhost:3000/lugar
 }
 ```
 
-### ↩️Alterar cardápio:
+### ↩️ Alterar cardápio:
 - Método PUT
 - No caminho "url da API" + /lugar/:id
 - Colocar no corpo da requisicao os dados necessários para alterar um lugar
@@ -116,7 +116,7 @@ http://localhost:3000/lugar/1
 }
 ```
 
-### ❌Deletar item no cardápio:
+### ❌ Deletar item no cardápio:
 - Método DELETE
 - No caminho "url da API" + /lugar/id
 #### URL:
@@ -124,7 +124,7 @@ http://localhost:3000/lugar/1
 http://localhost:3000/lugar/1
 ```
 ____
-#### 🌐Heroku:
+#### 🌐 Heroku:
 Para acessar a aplicação online click aqui: 
 
 [Heroku.](https://apirestdevburger.herokuapp.com/) 
