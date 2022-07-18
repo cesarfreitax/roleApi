@@ -79,10 +79,10 @@ Nossa API por enquanto conta com apenas uma entidade e suas próprias rotas:
 
 ``` js:
 {
-	nome_do_lugar: "Espaco Hall",
-	bairro: "Barra da Tijuca",
-	descricao: "Casa de festas bem badalada na noite carioca. O local costuma ter shows com cantores famosos nas sextas e aos sábados rola dj"
-	link: "https://espacohall.com.br/"
+	"nome_do_lugar": "Espaco Hall",
+	"bairro": "Barra da Tijuca",
+	"descricao": "Casa de festas bem badalada na noite carioca. O local costuma ter shows com cantores famosos nas sextas e aos sábados rola dj"
+	"link": "https://espacohall.com.br/"
 }
 ```
 
