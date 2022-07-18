@@ -10,7 +10,7 @@ ____
 
 ____
 
-![rolé_api_logo](https://user-images.githubusercontent.com/96268732/179521148-5861c8aa-05c8-43cb-88ed-1aaa8b1e79a4.png)
+<img align="center" src="https://user-images.githubusercontent.com/96268732/179521148-5861c8aa-05c8-43cb-88ed-1aaa8b1e79a4.png">
 
 #### A sua fome é o nosso bug e o nosso foco é desenvolver o seu burger
 ___
