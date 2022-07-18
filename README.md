@@ -14,11 +14,11 @@ ____
 #### 🪛 Ferramentas utilizadas:
 • [Express](https://www.npmjs.com/package/express)
 
-• [Sqlite](https://www.sqlite.org/docs.html )
+• [SQLite](https://www.sqlite.org/docs.html )
 
-• [Nodejs](https://nodejs.org/en/docs/guides/)
+• [NodeJS](https://nodejs.org/en/docs/guides/)
 
-• [Insomnia](https://docs.insomnia.rest/insomnia/send-your-first-request)
+• [Thunder Client](https://www.thunderclient.com/)
 
 
 ____
