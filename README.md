@@ -1,6 +1,6 @@
 # Rolé API # 🚀💜✨
 ____
-#### 📝Proposta:
+#### 💜Proposta:
  *Estou trabalhando no desenvolvimento de uma API REST em Node.Js. Escolhi o tema "Rolé", pois é um termo que usamos aqui na cidade do Rio de Janeiro pra se referir a sair pra algum lugar.*
 ____
 
@@ -8,8 +8,8 @@ ____
 
 #### SUA API PERFEITA PARA DAR AQUELE ROLÉ! =)
 ___
-#### 💜Descrição:
-*Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes, ou seja, o CRUD completo!
+#### 📝Descrição:
+*Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes, ou seja, o CRUD completo!*
 ____
 #### 🪛Ferramentas utilizadas:
 • [Express](https://www.npmjs.com/package/express)
@@ -81,7 +81,7 @@ Nossa API por enquanto conta com apenas uma entidade e suas próprias rotas:
 {
 	"nome_do_lugar": "Espaco Hall",
 	"bairro": "Barra da Tijuca",
-	"descricao": "Casa de festas bem badalada na noite carioca. O local costuma ter shows com cantores famosos nas sextas e aos sábados rola dj"
+	"descricao": "Casa de festas bem badalada na noite carioca. O local costuma ter shows com cantores famosos nas sextas e aos sábados rola dj",
 	"link": "https://espacohall.com.br/"
 }
 ```
