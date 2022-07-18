@@ -6,10 +6,10 @@ ____
 
 <img width="300" src="https://user-images.githubusercontent.com/96268732/179521148-5861c8aa-05c8-43cb-88ed-1aaa8b1e79a4.png">
 
-#### SUA API PERFEITA PARA DAR AQUELE ROLÉ! =)
+#### SUA API PERFEITA PRA DAR AQUELE ROLÉ!
 ___
 #### 📝Descrição:
-*Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes, ou seja, o CRUD completo!*
+*Estou desenvolvendo uma aplicação pra localizar lugares legais pra dar aquele agito no final de semana! Utilizando essa aplicação é possível: organizar sua lista de lugares como restaurantes, bares, cadastro de clientes com o CRUD completo!*
 ____
 #### 🪛Ferramentas utilizadas:
 • [Express](https://www.npmjs.com/package/express)
