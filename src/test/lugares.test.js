@@ -1,5 +1,4 @@
-// const ValidacoesLugares = require('../services/ValidacoesLugares');
-import ValidacoesLugares from '../services/ValidacoesLugares.js';
+import { ValidacoesLugares } from '../services/ValidacoesLugares.js';
 
 test("Verifica se o campo está vazio", () => {
     expect(ValidacoesLugares.notEmpty("")).toBe(false)

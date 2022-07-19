@@ -1,4 +1,4 @@
-class ValidacoesLugares {
+export class ValidacoesLugares {
         
     static notEmpty(field){
         if (field.length > 0){
@@ -18,5 +18,3 @@ class ValidacoesLugares {
     }
 
 }
-
-export default ValidacoesLugares
