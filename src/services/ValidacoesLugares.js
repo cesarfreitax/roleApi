@@ -1,4 +1,4 @@
-export class ValidacoesFornecedores {
+export class ValidacoesLugares {
         
     static notEmpty(field){
         if (field.length > 0){
@@ -9,11 +9,12 @@ export class ValidacoesFornecedores {
     }
 
     static validaCEP(cep){
-        if ((cep.toString()).length = 8){
+        const cepNum = parseInt(cep)
+        if (cep.length == 8 && cepNum == cep){
             return true
         } else {
             return false
         }
     }
-    
+
 }
