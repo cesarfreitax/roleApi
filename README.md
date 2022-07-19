@@ -125,7 +125,9 @@ http://localhost:3000/lugar/1
 ```
 ____
 #### 🌐 Heroku:
-Para acessar a aplicação online click aqui: 
+Fiz o deploy na plataforma de núvem Heroku, pois é a que estou mais acostumado no momento.
+
+Veja a aplicação online: 
 
 [Heroku.](https://role-api.herokuapp.com/) 
 Lembre-se de adicionar a Rota que deseja..
