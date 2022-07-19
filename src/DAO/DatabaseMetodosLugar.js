@@ -6,7 +6,7 @@ class DatabaseMetodosLugar {
         const lugar = `CREATE TABLE IF NOT EXISTS lugar (
             id_lugar INTEGER PRIMARY KEY,
             nome_do_lugar VARCHAR,
-            cep INTEGER,
+            cep VARCHAR,
             bairro VARCHAR,
             cidade VARCHAR,
             estado VARCHAR,

@@ -1,5 +1,6 @@
 import DatabaseMetodosLugar from "../DAO/DatabaseMetodosLugar.js";
 import LugarModels from '../models/LugarModels.js';
+import { ValidacoesLugares } from '../services/ValidacoesLugares.js';
 
 export async function testApi(req, res){
     try {
@@ -11,9 +12,13 @@ export async function testApi(req, res){
 
 export async function insertOne(req, res){
     try {
-        const lugar = new LugarModels(...Object.values(req.body));
-        const response = await DatabaseMetodosLugar.postLugar(lugar);
-        res.status(201).json(response);
+        if(ValidacoesLugares.notEmpty(req.body.nome_do_lugar && req.body.bairro && req.body.cidade && req.body.estado && req.body.pais && req.body.descricao && req.body.link) && ValidacoesLugares.validaCEP(req.body.cep)){
+            const lugar = new LugarModels(...Object.values(req.body));
+            const response = await DatabaseMetodosLugar.postLugar(lugar);
+            res.status(201).json(response);
+        } else {
+            throw new Error("Ops! Verifique se digitou o CEP com apenas 8 numeros e/ou deixou algum outro campo em branco.")
+        }
     } catch (e) {
         res.status(400).json(e.message);
     }
