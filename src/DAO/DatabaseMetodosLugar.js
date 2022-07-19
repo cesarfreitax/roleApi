@@ -6,7 +6,11 @@ class DatabaseMetodosLugar {
         const lugar = `CREATE TABLE IF NOT EXISTS lugar (
             id_lugar INTEGER PRIMARY KEY,
             nome_do_lugar VARCHAR,
+            cep INTEGER,
             bairro VARCHAR,
+            cidade VARCHAR,
+            estado VARCHAR,
+            pais VARCHAR,
             descricao VARCHAR,
             link VARCHAR
         )`
@@ -23,7 +27,7 @@ class DatabaseMetodosLugar {
     }
 
     static postLugar(lugar) {
-        const query = `INSERT INTO lugar (nome_do_lugar, bairro, descricao, link) VALUES (?, ?, ?, ?)`;
+        const query = `INSERT INTO lugar (nome_do_lugar, cep, bairro, cidade, estado, pais, descricao, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
 
         const body = Object.values(lugar);
 
@@ -39,7 +43,7 @@ class DatabaseMetodosLugar {
     };
 
     static updateLugarById(lugar, id) {
-        const query = `UPDATE lugar SET (nome_do_lugar, bairro, descricao, link) = (?, ?, ?, ?) WHERE id_lugar = ?`;
+        const query = `UPDATE lugar SET (nome_do_lugar, cep, bairro, cidade, estado, pais, descricao, link) = (?, ?, ?, ?, ?, ?, ?, ?) WHERE id_lugar = ?`;
 
         const body = Object.values(lugar);
 
