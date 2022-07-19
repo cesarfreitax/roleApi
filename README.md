@@ -127,17 +127,14 @@ ____
 #### 🌐 Heroku:
 Para acessar a aplicação online click aqui: 
 
-[Heroku.](https://apirestdevburger.herokuapp.com/) 
+[Heroku.](https://role-api.herokuapp.com/) 
 Lembre-se de adicionar a Rota que deseja..
 Ex: 
 ``` js
-https://apirestdevburger.herokuapp.com/pedidos 
-
+https://role-api.herokuapp.com/lugares 
 ```
 ____
-### Util:
-Existe um arquivo na pasta utils chamado ["Insomnia_2022-05-04"](./src//utils/Insomnia_2022-05-04.json). No seu Insomnia você pode importar esse arquivo, fazendo isso você recebe uma coleção separada por pasta com todas as rotas e os verbos do Crud.
-____
+
 #### Versão:
 ```js 
 node: v16.14.2
