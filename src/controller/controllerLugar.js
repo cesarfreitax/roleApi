@@ -53,8 +53,12 @@ export async function deleteOne(req, res){
 
 export async function updateOne(req, res){
     try {
-        const response = await DatabaseMetodosLugar.updateLugarById(req.body, req.params.id);
-        res.status(200).json(response);
+        if (ValidacoesLugares.notEmpty(req.body.nome_do_lugar && req.body.bairro && req.body.cidade && req.body.estado && req.body.pais && req.body.descricao && req.body.link) && ValidacoesLugares.validaCEP(req.body.cep)) {            
+            const response = await DatabaseMetodosLugar.updateLugarById(req.body, req.params.id);
+            res.status(200).json(response);
+        } else {
+            throw new Error("Ops! Verifique se digitou o CEP com apenas 8 numeros e/ou deixou algum outro campo em branco.")
+        }
     } catch (e) {
         res.status(400).json(e.message);
     }
