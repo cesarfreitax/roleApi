@@ -1,4 +1,4 @@
-# Rolé API # 🚀💜✨
+# Rolé API  🚀💜✨
 ____
 #### 💜 Proposta:
  *API REST em Node.Js e Express. Escolhi o tema "Rolé", pois é um termo que usamos aqui na cidade do Rio de Janeiro pra se referir a sair pra algum lugar.*
